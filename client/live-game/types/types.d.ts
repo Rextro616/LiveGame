@@ -1,0 +1,19 @@
+type Player = {
+    x:50,
+    spdX:30,
+    y:40,
+    spdY:5,
+    name:'P',
+    hp:10,
+    width:20,
+    height:20,
+    color:'green',
+    //
+    atkSpd:1,
+    attackCounter:0,
+    pressingDown:false,
+    pressingUp:false,
+    pressingLeft:false,
+    pressingRight:false,
+    aimAngle:0,
+};

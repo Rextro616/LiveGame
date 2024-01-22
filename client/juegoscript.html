@@ -184,13 +184,14 @@ testCollisionRectRect = function(rect1,rect2){
                 && rect1.y <= rect2.y + rect2.height
                 && rect2.y <= rect1.y + rect1.height;
 }
- 
-drawEntity = function(something){
+
+//! Funcion agregada a page
+/* drawEntity = function(something){
         ctx.save();
         ctx.fillStyle = something.color;
         ctx.fillRect(something.x-something.width/2,something.y-something.height/2,something.width,something.height);
         ctx.restore();
-}
+} */
  
 document.onclick = function(mouse){
         if(player.attackCounter > 25){  //every 1 sec
@@ -217,7 +218,6 @@ document.oncontextmenu = function(mouse){
 document.onmousemove = function(mouse){
         var mouseX = mouse.clientX - document.getElementById('ctx').getBoundingClientRect().left;
         var mouseY = mouse.clientY - document.getElementById('ctx').getBoundingClientRect().top;
-       
         mouseX -= player.x;
         mouseY -= player.y;
        
@@ -353,16 +353,4 @@ startNewGame = function(){
 startNewGame();
  
 setInterval(update,40);
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 </script>
